@@ -41,7 +41,8 @@
 .header li a {
   display: block;
   padding: 15px 20px;
-  color: $textColor;
+  // color: $textColor;
+  color:#c95f00;
   text-decoration: none;
 }
 
@@ -63,9 +64,14 @@
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
+  color: #0077ba;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+}
+
+#MiseEnAvant {
+  font-weight: bold;
 }
 
 /* menu */

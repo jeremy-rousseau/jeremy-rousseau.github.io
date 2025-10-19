@@ -1,0 +1,30 @@
+@import "../../_globalColor";
+
+.logiciel-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.logiciel-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.logiciel-skill-inline > p {
+  color: $subTitle;
+  font-size: 10px;
+}
+
+.logiciel-skill-inline > img {
+  width: 50px;
+  height: 50px;
+}
+
+.logiciel-skill-inline > img:hover ~ p {
+  color: $skillsColor;
+}

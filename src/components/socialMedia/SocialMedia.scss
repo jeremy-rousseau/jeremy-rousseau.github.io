@@ -79,7 +79,8 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  background-color: #c95f00;
+  transform: scale(1.1);
 }
 
 /* Media Query */

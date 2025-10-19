@@ -28,8 +28,8 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  color: $topButtonHover;
+  // text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .contact-image-div > img {
-  max-width: 100%;
+  max-width: 50%;
+  max-height: 50%;
   height: auto;
   margin-left: 1.5rem;
   margin-top: -4rem;

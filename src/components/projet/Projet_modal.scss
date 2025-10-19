@@ -1,0 +1,134 @@
+@import "../../_globalColor";
+
+.ReactModal__Overlay {
+  z-index: 100;
+}
+
+.ReactModal__Content {
+    position: absolute;
+    inset: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+.dark-mode {
+  background-color: $darkBackground !important;
+  color: $textColorDark !important;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+// Partie carousel
+.image-carousel {
+    flex-basis: 50%;
+    text-align: center;
+}
+.image-carousel img {
+    max-width: 100%;
+    max-height: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid $buttonColor;
+}
+.image-legend {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+.carousel-button{
+    background-color: $buttonColor;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+
+// Bouton de fermeture
+.bouton_croix {
+  border-radius: 50%;
+  border: none;
+  background-color: $buttonColor;
+  color: white; 
+  cursor: pointer; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bouton_croix:hover, .carousel-button:hover, .icon_media:hover {
+  background-color: $topButtonHover;
+  transform: scale(1.1);
+}
+
+
+// Partie détails
+.details_no_image {
+    flex-basis: 100%;
+    padding-left: 10px;
+ 
+}
+.details {
+    flex-basis: 50%;
+    padding-left: 10px;
+ 
+}
+.details-titre {
+  text-align: center;
+}
+.icon_media {
+    background-color: $buttonColor;
+    color: #ffffff;
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in;
+}
+.keyword {
+    display: inline-block;
+    border: 1px solid $buttonColor;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+
+// Responsive design
+@media (max-width: 768px) { 
+  .modal-content {
+    flex-direction: column; 
+  }
+
+  .image-carousel,
+  .details {
+    flex-basis: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .image-carousel:last-child,
+  .details:last-child {
+    margin-bottom: 0;
+  }
+}

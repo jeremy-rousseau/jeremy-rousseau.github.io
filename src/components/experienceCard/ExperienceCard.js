@@ -2,7 +2,7 @@ import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({cardInfo, isDark, linkedinURL}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -17,6 +17,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
+  const bannerColor = cardInfo.bannerColor ? cardInfo.bannerColor : rgb(colorArrays);
+
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
@@ -30,9 +32,15 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const handleLinkedinClick = () => {
+    if (linkedinURL) {
+      window.open(linkedinURL, "_blank");
+    }
+  };
+
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+    <div className={isDark ? "experience-card-dark" : "experience-card" + (linkedinURL ? " has-linkedin" : "")}>
+      <div style={{background: bannerColor }} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
@@ -44,7 +52,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
           className="experience-roundedimg"
           src={cardInfo.companylogo}
           alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
+          onLoad={() => {
+            if (!cardInfo.bannerColor) {
+              getColorArrays();
+            }
+          }}
         />
       </div>
       <div className="experience-text-details">
@@ -79,6 +91,15 @@ export default function ExperienceCard({cardInfo, isDark}) {
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
       </div>
+
+      {linkedinURL && (
+        <div className="linkedin-overlay" onClick={handleLinkedinClick}>
+          <i className="fab fa-linkedin-in linkedin-icon"></i>
+          <span className="linkedin-text">En savoir plus</span>
+        </div>
+      )}
+
     </div>
+
   );
 }
