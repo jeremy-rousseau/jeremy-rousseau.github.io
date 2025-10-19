@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26b06caf.css",
+    "main.js": "/static/js/main.a3fd9d42.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/ArcGis.png": "/static/media/ArcGis.1f8e2872d6f0b25fa514.png",
+    "static/media/GEO.png": "/static/media/GEO.d1907af2752604c5c43a.png",
+    "static/media/PostgreSQL.png": "/static/media/PostgreSQL.b72e36aee45efc3b72ac.png",
+    "static/media/Office_365.png": "/static/media/Office_365.b3052d9d349cce48fd30.png",
+    "static/media/QGIS.png": "/static/media/QGIS.88af9d18db4a9e97c705.png",
+    "static/media/JOSM.png": "/static/media/JOSM.df7c35f9d369a774e49c.png",
+    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/SAS.png": "/static/media/SAS.a0b753eadc32f5c4a81e.png",
+    "static/media/GeoNetwork.png": "/static/media/GeoNetwork.2961901fa6575d5bd3f7.png",
+    "static/media/R.png": "/static/media/R.9ffdc7d81e994bb00491.png",
+    "static/media/Power_BI.png": "/static/media/Power_BI.ae72e55b26235dae708a.png",
+    "static/media/Github.png": "/static/media/Github.aa62bf671fc24380c21b.png",
+    "static/media/CCPC.png": "/static/media/CCPC.35faa632333a1dda4d86.png",
+    "static/media/Articque_Platform.png": "/static/media/Articque_Platform.65af7de33abc4c7b27b7.png",
+    "static/media/CA.png": "/static/media/CA.e7359b8e5097dce910c7.png",
+    "static/media/Kapp_retail.png": "/static/media/Kapp_retail.5566e97b09cc870df672.png",
+    "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
+    "index.html": "/index.html",
+    "main.26b06caf.css.map": "/static/css/main.26b06caf.css.map",
+    "main.a3fd9d42.js.map": "/static/js/main.a3fd9d42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26b06caf.css",
+    "static/js/main.a3fd9d42.js"
+  ]
+}
