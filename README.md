@@ -4,7 +4,7 @@
 <h1 align="center">Mon PortFolio</h1>
 
 <p align="center">
-  <img src="/public/site-preview.png"  alt="Aperçu du site" />
+  <img src="/public/site_preview.png"  alt="Aperçu du site" />
 </p>
 
 Mon portfolio présente plusieurs de mes projets professionnels. Il est basé sur le template [developerFolio](https://github.com/saadpasta/developerFolio), mais j'y ai apporté des modifications personnelles pour qu'il réponde pleinement à mes attentes.
