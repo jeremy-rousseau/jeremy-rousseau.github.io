@@ -55,7 +55,9 @@ export default function Skills() {
                 );
               })}
             </div>
-            <LogicielSkill />
+            <Fade left duration={1000}>
+              <LogicielSkill />
+            </Fade>
           </div>
         </Fade>
       </div>

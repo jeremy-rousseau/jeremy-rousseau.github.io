@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import ProjectCard from "../../components/projet/Projet_tuile";
 import ProjectModal from "../../components/projet/Projet_modal";
 import { projet } from "../../projet";
-import {Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import "./Projet_section.scss";
 
@@ -32,11 +32,14 @@ export default function ProjectsSection() {
   }
   return (
     <article className="projet-section" id="projet">
-      <Fade left duration={1000}>
+      <Fade bottom duration={1000}>
         <header>
           <h1 className="projet-heading">Mes Projets</h1>
         </header>
-        <section>
+      </Fade>
+
+      <section>
+        <Fade bottom duration={1000} delay={200}>
           <ul className="filter-list">
             {allCategories.map((category) => (
               <li key={category} className="filter-item">
@@ -49,21 +52,26 @@ export default function ProjectsSection() {
               </li>
             ))}
           </ul>
+        </Fade>
 
           <ul className="project-list">
+
             {filteredProjects.map((project, index) => (
               <ProjectCard key={index} project={project} onClick={openModal} isDark={isDark} />
             ))}
-          </ul>
-        </section>
 
-        <ProjectModal
-          project={selectedProject}
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          isDark={isDark}
-        />
-      </Fade>
+          </ul>
+
+
+      </section>
+
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        isDark={isDark}
+      />
+
     </article>
 
   );
