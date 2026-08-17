@@ -190,6 +190,7 @@ const projet = {
         { src: "https://i.postimg.cc/tgQKV4g0/CCPC-Medi-Map.png", legend: "MédiMap" },
         { src: "https://i.postimg.cc/637bjsqm/CCPC-OZAE.png", legend: "OZAE" },
         { src: "https://i.postimg.cc/wj7Ns9GP/CCPC-Geo-Tourisme.png", legend: "GéoTourisme" },
+        { src: "https://i.postimg.cc/fb1CyWwK/Geo-Vert.png", legend: "GéoVert" },
         { src: "https://i.postimg.cc/nrVnCtZr/CCPC-page-connexion.png", legend: "Page de connexion" },
       ],
       year: "2024 - aujourd'hui",
@@ -201,7 +202,8 @@ const projet = {
         "GéoVoirie : gestion des voiries",
         "MédiMap : référencement des professionnels de santé",
         "OZAE : suivi des zones d'activités économiques",
-        "GéoTourisme : inventaire des points d'intérêt touristiques"
+        "GéoTourisme : inventaire des points d'intérêt touristiques",
+        "GéoVert : gestion des espaces verts"
       ],
       keywords: ["GEO Générateur", "HTML", "CSS", "JavaScript","PostgreSQL", "PostGIS","SQL"],
       media: []
@@ -271,6 +273,27 @@ const projet = {
       ],
       keywords: ["QGIS", "Excel","Word","SQL","PostgreSQL", "PostGIS"],
       media: []
+    },
+    
+    {
+      title: "Course de drones autonomes",
+      categories: ["Personnel"],
+      images: [
+        { src: "https://i.postimg.cc/RVbXyLjd/AIgrand-Prix.png", legend: "The AI Grand prix 2026" }
+      ],
+      year: "2026",
+      company: "Projet personnel",
+      description: "Programmer un drone de course autonome exclusivement en Python",
+      details: [
+        "Détection des portes du circuit à l'aide d'OpenCV",
+        "Contrôle direct via le protocole MAVLink, sans passer par un autopilote comme PX4 ou ArduPilot"
+      ],
+      keywords: ["Python","Github"],
+      media: [
+        { type: "video", title: "Démonstration", url: "https://youtu.be/D92abQwhNcU" },
+        { type: "github", title: "Répertoire du projet", url: "https://github.com/jeremy-rousseau/PyAIPilot_RJ" },
+        { type: "article", title: "Article de Numerama", url: "https://www.numerama.com/tech/2169261-500-000-dollars-et-un-job-le-test-dembauche-de-drone-le-plus-extreme-de-la-tech.html" }
+      ]
     }
     // {
     //   title: "Cartes diverses",
