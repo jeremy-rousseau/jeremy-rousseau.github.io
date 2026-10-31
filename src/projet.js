@@ -136,16 +136,19 @@ const projet = {
       title: "ConvertToSQL",
       categories: ["Personnel"],
       images: [
-        { src: "https://i.postimg.cc/SNwjCkj7/Convert-To-SQL.png", legend: "Interface du programme" }
+        { src: "https://i.postimg.cc/8z2qgmQG/Convert-To-Sql-1.png", legend: "Interface" },
+        { src: "https://i.postimg.cc/7YcRSnLF/Convert-To-Sql-2.png", legend: "Extension" }
       ],
       year: "2024",
       company: "Projet personnel",
-      description: " Programme de conversion d'une couche vectorielle vers un fichier SQL",
+      description: "Extension QGIS pour convertir une couche vectorielle vers un fichier SQL d'instruction INSERT",
       details: [
         "Utilisation du langage Python et du modeleur graphique de QGIS"
       ],
       keywords: ["Python", "QGIS", "SQL"],
-      media: []
+      media: [
+        { type: "github", title: "Répertoire du projet", url: "https://github.com/jeremy-rousseau/ConvertToSql" }
+      ]
     },
     {
       title: "Géocodage des magasins franchisés",
