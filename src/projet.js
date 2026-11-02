@@ -194,6 +194,8 @@ const projet = {
         { src: "https://i.postimg.cc/637bjsqm/CCPC-OZAE.png", legend: "OZAE" },
         { src: "https://i.postimg.cc/wj7Ns9GP/CCPC-Geo-Tourisme.png", legend: "GéoTourisme" },
         { src: "https://i.postimg.cc/fb1CyWwK/Geo-Vert.png", legend: "GéoVert" },
+        { src: "https://i.postimg.cc/8c2yyWj7/geospanc.png", legend: "GéoSPANC" },
+        { src: "https://i.postimg.cc/MKRxzm03/obs-petite-enfance.png", legend: "Observatoire de la petite enfance" },
         { src: "https://i.postimg.cc/nrVnCtZr/CCPC-page-connexion.png", legend: "Page de connexion" },
       ],
       year: "2024 - aujourd'hui",
@@ -206,7 +208,9 @@ const projet = {
         "MédiMap : référencement des professionnels de santé",
         "OZAE : suivi des zones d'activités économiques",
         "GéoTourisme : inventaire des points d'intérêt touristiques",
-        "GéoVert : gestion des espaces verts"
+        "GéoVert : gestion des espaces verts",
+        "GéoSPANC : contrôle et suivi des ANC",
+        "Observatoire de la petite enfance : chiffres clés et tableau de bord"
       ],
       keywords: ["GEO Générateur", "HTML", "CSS", "JavaScript","PostgreSQL", "PostGIS","SQL"],
       media: []
