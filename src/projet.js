@@ -194,7 +194,7 @@ const projet = {
         { src: "https://i.postimg.cc/637bjsqm/CCPC-OZAE.png", legend: "OZAE" },
         { src: "https://i.postimg.cc/wj7Ns9GP/CCPC-Geo-Tourisme.png", legend: "GéoTourisme" },
         { src: "https://i.postimg.cc/fb1CyWwK/Geo-Vert.png", legend: "GéoVert" },
-        { src: "https://i.postimg.cc/8c2yyWj7/geospanc.png", legend: "GéoSPANC" },
+        { src: "https://i.postimg.cc/2yxB46L4/geospanc.png", legend: "GéoSPANC" },
         { src: "https://i.postimg.cc/MKRxzm03/obs-petite-enfance.png", legend: "Observatoire de la petite enfance" },
         { src: "https://i.postimg.cc/nrVnCtZr/CCPC-page-connexion.png", legend: "Page de connexion" },
       ],
